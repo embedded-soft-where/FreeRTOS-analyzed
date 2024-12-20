@@ -10,7 +10,7 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     env:
-      BUILD_WRAPPER_OUT_DIR: ./FreeRTOS/Demo/CORTEX_LM3S102_GCC/build_wrapper_output_directory # Directory where build-wrapper output will be placed
+      BUILD_WRAPPER_OUT_DIR:  ${{ github.workspace }}/FreeRTOS/Demo/CORTEX_LM3S102_GCC/build_wrapper_output_directory # Directory where build-wrapper output will be placed
     steps:
       - uses: actions/checkout@v4
         with:
